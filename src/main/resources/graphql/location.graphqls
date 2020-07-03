@@ -8,7 +8,7 @@ origin:String!
 type Query{
 findDogBreeds: [String]!
 findDogBreedById(id: ID!): String!
-findAllDogNames:String!
+findAllDogNames:[String]!
 
 
 }

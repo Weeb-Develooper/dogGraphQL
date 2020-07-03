@@ -7,7 +7,7 @@ public class Location {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
     private String name;
     private String breed;
 
@@ -20,17 +20,17 @@ public class Location {
     }
 
 
-    public Location(int id, String name, String breed) {
+    public Location(Long id, String name, String breed) {
         this.id = id;
         this.name = name;
         this.breed = breed;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
