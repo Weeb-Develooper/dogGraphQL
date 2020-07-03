@@ -4,9 +4,11 @@ import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.graphql.graphqllearning.model.Location;
 import com.graphql.graphqllearning.repository.GraphqlRepo;
 import org.jetbrains.annotations.NotNull;
+import org.springframework.stereotype.Component;
 
 import java.util.*;
 
+@Component
 public class Query implements GraphQLQueryResolver {
     private GraphqlRepo graphqlRepo;
 
